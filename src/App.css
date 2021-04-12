@@ -1,9 +1,25 @@
-.App {
+h1,
+h2 {
   text-align: center;
 }
 
 .Dictionary {
-  margin: 2% 0 0;
+  margin: 2% auto 0;
+}
+.searchForm {
+  text-align: center;
+}
+
+.word {
+  font-size: 1.9rem;
+}
+
+.definitionDefinition {
+  font-size: 1.1rem;
+}
+
+.definitionExample {
+  font-style: italic;
 }
 
 .Footer {
