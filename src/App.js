@@ -9,7 +9,7 @@ function App() {
         <h1>Dictionary</h1>
         <h2>What do you want to look up?</h2>
         <Dictionary />
-        <div>
+        <div className="credit">
           Results from{" "}
           <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">
             https://dictionaryapi.dev
