@@ -26,6 +26,7 @@ export default function Dictionary() {
       <form onSubmit={search} className="searchForm">
         <input
           type="search"
+          aria-label="search input"
           placeholder="Search for a word"
           onChange={hanndleKeyword}
         />
