@@ -5,6 +5,10 @@ h2,
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .Dictionary {
   margin: 2% auto 0;
 }
@@ -21,6 +25,10 @@ h2,
 
 .word {
   font-size: 1.9rem;
+}
+
+.title {
+  font-weight: 600;
 }
 
 .definitionDefinition {
