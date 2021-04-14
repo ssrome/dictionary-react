@@ -5,10 +5,11 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <header>
         <h1>Dictionary</h1>
-        <h2>What do you want to look up?</h2>
-        <Dictionary />
+      </header>
+      <div className="container">
+        <Dictionary defaultKeyword="read" />
         <div className="credit">
           Results from{" "}
           <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">

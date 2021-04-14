@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="Footer">
+    <footer>
       <a
         href="https://github.com/ssrome/dictionary-react"
         target="_blank"
@@ -11,6 +11,6 @@ export default function Footer() {
         Open source code
       </a>{" "}
       by Sabrina Samuel
-    </div>
+    </footer>
   );
 }
