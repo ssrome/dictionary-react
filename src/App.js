@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Dictionary</h1>
+        <h1>React Dictionary</h1>
       </header>
       <div className="container">
         <Dictionary defaultKeyword="read" />

@@ -3,6 +3,14 @@ header {
   padding: 25px 0;
 }
 
+body {
+  background-color: #d5eeff;
+  color: #212121;
+  font-family: "Changa", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
 h1,
 .credit,
 footer {
@@ -11,7 +19,7 @@ footer {
 
 span.question {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   padding: 10px 0;
   text-align: center;
 }
@@ -61,17 +69,21 @@ button {
   font-weight: 600;
 }
 
+.definition {
+  padding: 0 0 10px 0;
+}
 .definitionDefinition {
   font-size: 1.1rem;
 }
 
 .definitionExample {
+  font-size: 0.9rem;
   font-style: italic;
 }
 
 .Synonyms li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 5px 10px 0;
 }
 
 footer {

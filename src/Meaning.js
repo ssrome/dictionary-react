@@ -7,16 +7,14 @@ export default function Meaning(props) {
       <h4>{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function (definition, index) {
         return (
-          <div key={index}>
-            <span className="title">Definition:</span>{" "}
+          <div className="definition" key={index}>
             <span className="definitionDefinition">
               {definition.definition}
             </span>
             <br />
-            <span className="title">Example:</span>{" "}
+
             <span className="definitionExample">{definition.example}</span>
-            <br />
-            <br />
+
             <Synonyms synonyms={definition.synonyms} />
           </div>
         );
