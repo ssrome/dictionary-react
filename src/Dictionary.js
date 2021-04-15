@@ -38,7 +38,7 @@ export default function Dictionary(props) {
       .then(handleResponse)
       .then(photoSearch)
       .catch(function (error) {
-        alert("Please search for a different word");
+        alert(`${keyword} can't be found. Please search for a different word`);
       });
   }
 
