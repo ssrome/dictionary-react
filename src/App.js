@@ -11,9 +11,13 @@ function App() {
       <div className="container">
         <Dictionary defaultKeyword="read" />
         <div className="credit">
-          Results from{" "}
+          Dictionary results from{" "}
           <a href="https://dictionaryapi.dev/" target="_blank" rel="noreferrer">
             https://dictionaryapi.dev
+          </a>{" "}
+          and{" "}
+          <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+            Photos provided by Pexels
           </a>
         </div>
         <Footer />
