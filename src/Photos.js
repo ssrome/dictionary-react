@@ -7,7 +7,7 @@ export default function Photos(props) {
         <div className="row photoList">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4 photoListItem" key={index}>
+              <div className="col-sm photoListItem" key={index}>
                 <img
                   className="img-fluid photo"
                   src={photo.src.medium}

@@ -17,7 +17,7 @@ function App() {
           </a>{" "}
           and{" "}
           <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
-            Photos provided by Pexels
+            photos provided by Pexels
           </a>
         </div>
         <Footer />
