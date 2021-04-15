@@ -6,23 +6,44 @@ export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
     setResults(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    setPhotos(response.data.photos);
   }
 
   function handleKeyword(event) {
     setKeyword(event.target.value);
   }
 
+  function photoSearch() {
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3&orientation=square`;
+    let pexelsApiKey =
+      "563492ad6f917000010000012c04f081c25e4b6f8858792ddeb8bdff";
+    axios({
+      method: "get",
+      url: pexelsApiUrl,
+      headers: { Authorization: pexelsApiKey },
+    }).then(handlePexelsResponse);
+  }
+
   function search() {
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${keyword}`;
-    axios.get(url).then(handleResponse);
+    axios
+      .get(url)
+      .then(handleResponse)
+      .then(photoSearch)
+      .catch(function (error) {
+        alert("Please search for a different word");
+      });
   }
 
   function load() {
     setLoaded(true);
-
     search();
   }
 
@@ -52,7 +73,7 @@ export default function Dictionary(props) {
           </form>
         </section>
 
-        <Results results={results} />
+        <Results results={results} photos={photos} keyword={keyword} />
       </div>
     );
   } else {
