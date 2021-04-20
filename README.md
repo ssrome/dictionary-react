@@ -1,6 +1,6 @@
 # Dictionary React App
 
-A basic to-do app that performs CRUD operations locally. A singular list will be saved to local storage.
+An app where you can search for a word and results will include its definition, pronunciation and images
 
 ## Installation
 
